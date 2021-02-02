@@ -29,6 +29,9 @@ To run the system use `node ./`. This will create a version of the system on you
 - Run the following commands. It installs a package manager, and a testing harness, and then the dependencies. 
   - `nodist 8.11.4`
   - `npm install`
+
+- Notice that the `ygosalvation-admin` project need a node version of 10, while this project is 8. The code that start the `ygosalvation-admin` project is in `bin.js`, you can choose to comment out that piece of code to run the project separately to avoid some problems
+
 - create a `.env` file in the top folder (beside this file). 
   - Set `SSL_KEY=<path>` SSL isnt needed to work locally, key path
   - Set `SSL_CERT=<path>` SSL isnt needed to work locally, certificate path.
